@@ -1,7 +1,17 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'editorconfig/editorconfig-vim'
+
+call vundle#end()
+
 colorscheme solarized
 
 syntax on
-filetype plugin indent on
+filetype indent on
 
 set background=dark
 set dir=~/.vim/tmp/
