@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 
@@ -26,6 +27,8 @@ set number
 set showtabline=2
 set smartindent
 set tabstop=4 shiftwidth=4 expandtab smarttab
+set t_Co=256
+set term=xterm-256color
 
 cmap w!! w !sudo tee > /dev/null %
 
@@ -41,3 +44,6 @@ inoremap kk <ESC>
 
 nmap <C-l> :tabn<CR>
 nmap <C-h> :tabp<CR>
+
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
